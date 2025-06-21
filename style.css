@@ -1,0 +1,207 @@
+/* Reset i osnovne postavke */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 3px solid #000;
+}
+
+.logo {
+    font-family: 'Old English Text MT', serif;
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+/* Navigacija */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    min-height: calc(100vh - 200px);
+}
+
+/* News Sections */
+.news-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    text-transform: capitalize;
+}
+
+/* News Grid */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: start; 
+
+}
+
+.news-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    height: fit-content;
+}
+
+.news-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.news-image {
+    padding: 0px 20px 15px 20px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.news-item:hover .news-image img {
+    transform: scale(1.05);
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-title {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.news-title a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.news-title a:hover {
+    color: #0066cc;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* Responzivnost */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 36px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-link {
+        padding: 12px 20px;
+    }
+    
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .news-title {
+        font-size: 16px;
+    }
+}
