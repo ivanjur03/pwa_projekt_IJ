@@ -45,7 +45,7 @@ CREATE TABLE `korisnik` (
 INSERT INTO `korisnik` (`id`, `username`, `email`, `password`, `ime`, `prezime`, `admin`, `datum_registracije`) VALUES
 (3, 'admin', 'admin@lemonde.hr', '$2y$10$V9VpfZF9ZPfYZXYnWwBbj.sYYJfbDrwAj.HRz0xFb5A1y8HLq.tYq', 'Admin', 'Korisnik', 1, '2025-06-19 14:17:58'),
 (4, 'ivanich', 'ivanjurjevic03@gmail.com', '$2y$10$ZKeyvX0UavCm3eem/04za.QyAolr4zOP6nmANRskvkZYKyRAoDz2a', 'ivan', 'jurjević', 1, '2025-06-19 14:19:18'),
-(5, 'testuser', 'test@testiram.hr', '$2y$10$djNWJM5nwPVbNkzaFYPB6.yvjcYrkaivnNajJpSuqkHSFJHi5uss2', 'korisnik', 'korisnik', 0, '2025-06-20 12:06:07');
+(5, 'testuser', 'test@testiram.hr', '$2y$10$djNWJM5nwPVbNkzaFYPB6.yvjcYrkaivnNajJpSuqkHSFJHi5uss2', 'korisnik', 'korisnik', 1, '2025-06-20 12:06:07');
 
 -- --------------------------------------------------------
 
